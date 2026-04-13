@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome to <%= WebsiteName %></title>
+	</head>
+	<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0">
+		<div
+			style="
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			"
+		>
+			<div style="background-color: #28a745; color: #fff; padding: 10px 20px; text-align: center">
+				<h1>Welcome to <%= WebsiteName %>!</h1>
+			</div>
+			<div style="padding: 20px">
+				<p>Dear <%= name %>,</p>
+				<p>
+					Welcome to <%= WebsiteName %>, your one-stop shop for everything you need! We're excited to have you on board and look forward to helping you explore our wide range of products.
+				</p>
+				<p>Your login details are:</p>
+				<p>Email: <strong><%= email %></strong></p>
+				<p>
+					<a
+						href="<%= customerLoginURL %>"
+						style="color: #28a745; text-decoration: none; font-weight: bold"
+					>
+						Click here to log in to your account
+					</a>
+				</p>
+				<p>
+					Once logged in, you can start shopping, view your order history, manage your account details, and much more!
+				</p>
+				<p>If you have any questions, feel free to contact our support team. We're here to help!</p>
+			</div>
+			<div style="text-align: center; padding: 10px; font-size: 14px; color: #777">
+				<p>Thank you for choosing <%= WebsiteName %>!</p>
+				<p>Happy shopping,</p>
+				<p>The <%= WebsiteName %> Team - <%= AppName %></p>
+			</div>
+		</div>
+	</body>
+</html>

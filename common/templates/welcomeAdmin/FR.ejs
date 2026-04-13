@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bienvenue Admin</title>
+	</head>
+	<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0">
+		<div
+			style="
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			"
+		>
+			<div style="background-color: #007bff; color: #fff; padding: 10px 20px; text-align: center">
+				<h1>Bienvenue sur le panneau d'administration</h1>
+			</div>
+			<div style="padding: 20px">
+				<p>Cher <%= name %>,</p>
+				<p>Bienvenue dans notre équipe ! Vous avez reçu un accès administrateur à notre plateforme.</p>
+				<p>Vos identifiants de connexion sont les suivants :</p>
+				<p>Email : <strong><%= email %></strong></p>
+				<p>Mot de passe : <strong><%= password %></strong></p>
+				<p>
+					<a href="<%= adminLoginURL %>" style="color: #007bff; text-decoration: none">
+						Cliquez ici pour vous connecter au panneau d'administration
+					</a>
+				</p>
+				<p>Veuillez vous connecter et changer votre mot de passe dès que possible pour des raisons de sécurité.</p>
+			</div>
+			<div style="text-align: center; padding: 10px; font-size: 14px; color: #777">
+				<p>Si vous avez des questions, n'hésitez pas à contacter notre équipe de support.</p>
+				<p>Merci,</p>
+				<p>L'équipe de FY-Manager - <%= AppName %></p>
+			</div>
+		</div>
+	</body>
+</html>

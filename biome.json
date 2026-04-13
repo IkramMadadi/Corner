@@ -1,0 +1,48 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"formatter": {
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 120,
+		"lineEnding": "lf"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noForEach": "off"
+			},
+			"recommended": true,
+			"style": {
+				"noNonNullAssertion": "off",
+				"noUselessElse": "warn"
+			},
+			"suspicious": {
+				"noConfusingVoidType": "off",
+				"noExplicitAny": "off",
+				"noEmptyInterface": "off"
+			},
+			"correctness": {
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error",
+				"noUnusedPrivateClassMembers": "error"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "always",
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"trailingCommas": "es5",
+			"arrowParentheses": "asNeeded"
+		}
+	},
+	"files": {
+		"ignore": ["node_modules", "dist", "build", "src", "common/data/Algeria"],
+		"include": ["common/**/*.ts", "common/**/*.tsx"]
+	}
+}

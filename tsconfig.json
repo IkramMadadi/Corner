@@ -1,0 +1,85 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "#common/*": [
+        "common/components/*"
+      ],
+      "&common/*": [
+        "common/models/*"
+      ],
+      "$common/*": [
+        "common/schemas/*"
+      ],
+      ":common/*": [
+        "common/hooks/*"
+      ],
+      "^common/*": [
+        "common/validations/*"
+      ],
+      "!common/*": [
+        "common/types/*"
+      ],
+      "~common/*": [
+        "common/lib/*"
+      ],
+      "@common/*": [
+        "common/*"
+      ],
+      "#client/*": [
+        "src/components/*"
+      ],
+      ":client/*": [
+        "src/hooks/*"
+      ],
+      "^client/*": [
+        ".src/validation/*"
+      ],
+      "!client/*": [
+        "src/types/*"
+      ],
+      "@client/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*",
+    "common/**/*",
+    ".next/types/**/*.ts",
+    "test/**/*",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "common/validations/generated/**/*",
+    "common/validations/models/back/**/*",
+    "common/types/generated/**/*",
+    "common/validations/requests/**/*",
+    "common/models/otpSession.ts",
+    "common/models/user.ts"
+  ]
+}

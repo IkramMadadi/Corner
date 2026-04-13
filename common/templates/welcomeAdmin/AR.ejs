@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>مرحبًا بك مسؤول</title>
+	</head>
+	<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; direction: rtl">
+		<div
+			style="
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			"
+		>
+			<div style="background-color: #007bff; color: #fff; padding: 10px 20px; text-align: center">
+				<h1>مرحبًا بك في لوحة الإدارة</h1>
+			</div>
+			<div style="padding: 20px">
+				<p>عزيزي <%= name %>،</p>
+				<p>مرحبًا بك في فريقنا! لقد تم منحك صلاحيات المسؤول للوصول إلى منصتنا.</p>
+				<p>بيانات تسجيل الدخول الخاصة بك هي:</p>
+				<p>البريد الإلكتروني: <strong><%= email %></strong></p>
+				<p>كلمة المرور: <strong><%= password %></strong></p>
+				<p>
+					<a href="<%= adminLoginURL %>" style="color: #007bff; text-decoration: none">
+						اضغط هنا لتسجيل الدخول إلى لوحة الإدارة
+					</a>
+				</p>
+				<p>يرجى تسجيل الدخول وتغيير كلمة المرور الخاصة بك في أقرب وقت ممكن لأسباب أمنية.</p>
+			</div>
+			<div style="text-align: center; padding: 10px; font-size: 14px; color: #777">
+				<p>إذا كانت لديك أي أسئلة، فلا تتردد في التواصل مع فريق الدعم الخاص بنا.</p>
+				<p>شكرًا،</p>
+				<p>فريق FY-Manager - <%= AppName %></p>
+			</div>
+		</div>
+	</body>
+</html>

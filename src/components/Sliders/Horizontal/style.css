@@ -1,0 +1,22 @@
+@import url('../_slider-common.css');
+
+.product-slider {
+	flex-direction: column;
+	gap: 1rem;
+	margin: auto;
+	--slide-spacing: 1rem;
+	--slide-size: 360px;
+	--slide-max-size: 80vw;
+}
+
+.product-slider .slider__slide {
+	max-width: var(--slide-max-size);
+}
+
+.product-slider__buttons {
+	width: 100%;
+	display: flex;
+	gap: 0.6rem;
+	align-items: center;
+	justify-content: center;
+}

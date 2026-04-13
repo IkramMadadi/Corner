@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bienvenue chez <%= WebsiteName %></title>
+	</head>
+	<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0">
+		<div
+			style="
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			"
+		>
+			<div style="background-color: #28a745; color: #fff; padding: 10px 20px; text-align: center">
+				<h1>Bienvenue chez <%= WebsiteName %> !</h1>
+			</div>
+			<div style="padding: 20px">
+				<p>Cher/Cher <%= name %>,</p>
+				<p>
+					Bienvenue chez <%= WebsiteName %>, votre boutique unique pour tout ce dont vous avez besoin ! Nous sommes ravis de vous accueillir et avons hâte de vous aider à explorer notre large gamme de produits.
+				</p>
+				<p>Vos identifiants de connexion sont :</p>
+				<p>Email : <strong><%= email %></strong></p>
+				<p>
+					<a
+						href="<%= customerLoginURL %>"
+						style="color: #28a745; text-decoration: none; font-weight: bold"
+					>
+						Cliquez ici pour vous connecter à votre compte
+					</a>
+				</p>
+				<p>
+					Une fois connecté, vous pouvez commencer vos achats, consulter votre historique de commandes, gérer les détails de votre compte, et bien plus encore !
+				</p>
+				<p>Si vous avez des questions, n'hésitez pas à contacter notre équipe de support. Nous sommes là pour vous aider !</p>
+			</div>
+			<div style="text-align: center; padding: 10px; font-size: 14px; color: #777">
+				<p>Merci d'avoir choisi <%= WebsiteName %> !</p>
+				<p>Bons achats,</p>
+				<p>L'équipe de <%= WebsiteName %> - <%= AppName %></p>
+			</div>
+		</div>
+	</body>
+</html>

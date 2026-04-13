@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>مرحبًا بك في <%= WebsiteName %></title>
+	</head>
+	<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; direction: rtl">
+		<div
+			style="
+				max-width: 600px;
+				margin: 0 auto;
+				background-color: #fff;
+				padding: 20px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			"
+		>
+			<div style="background-color: #28a745; color: #fff; padding: 10px 20px; text-align: center">
+				<h1>مرحبًا بك في <%= WebsiteName %>!</h1>
+			</div>
+			<div style="padding: 20px">
+				<p>عزيزي/عزيزتي <%= name %>،</p>
+				<p>
+					مرحبًا بك في <%= WebsiteName %>، وجهتك المثالية لكل ما تحتاجه! يسعدنا انضمامك إلينا ونتطلع إلى مساعدتك في استكشاف مجموعتنا الواسعة من المنتجات.
+				</p>
+				<p>تفاصيل تسجيل الدخول الخاصة بك:</p>
+				<p>البريد الإلكتروني: <strong><%= email %></strong></p>
+				<p>
+					<a
+						href="<%= customerLoginURL %>"
+						style="color: #28a745; text-decoration: none; font-weight: bold"
+					>
+						اضغط هنا لتسجيل الدخول إلى حسابك
+					</a>
+				</p>
+				<p>
+					بمجرد تسجيل الدخول، يمكنك البدء في التسوق، عرض سجل طلباتك، إدارة تفاصيل حسابك، والمزيد!
+				</p>
+				<p>إذا كانت لديك أي أسئلة، فلا تتردد في التواصل مع فريق الدعم الخاص بنا. نحن هنا لمساعدتك!</p>
+			</div>
+			<div style="text-align: center; padding: 10px; font-size: 14px; color: #777">
+				<p>شكرًا لاختيارك <%= WebsiteName %>!</p>
+				<p>نتمنى لك تسوقًا سعيدًا،</p>
+				<p>فريق <%= WebsiteName %> - <%= AppName %></p>
+			</div>
+		</div>
+	</body>
+</html>

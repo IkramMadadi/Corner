@@ -1,0 +1,28 @@
+@import url('../_slider-common.css');
+
+.category-slider {
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+	--slide-spacing: 1rem;
+	--slide-size: calc(100% / 3 - 2px);
+	--slide-max-size: 90vw;
+}
+.category-slider .slider__viewport {
+	width: calc(100% - 4rem);
+}
+
+.category-slider .slider__slide {
+	max-width: var(--slide-max-size);
+}
+/* if media size smaller than 500 */
+@media (max-width: 500px) {
+	.category-slider {
+		--slide-size: calc(100% / 2 - 2px);
+	}
+}
+@media (max-width: 380px) {
+	.category-slider {
+		--slide-size: calc(100% - 1rem);
+	}
+}
