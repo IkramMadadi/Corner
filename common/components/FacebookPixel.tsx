@@ -84,6 +84,7 @@ const FacebookPixel = ({ pixelId, websiteId }: { pixelId: string; websiteId: str
                         'https://connect.facebook.net/en_US/fbevents.js');
 
                         fbq('init', '${cleanPixelId}');
+                        fbq('track', 'PageView');
                     `,
                 }}
             />

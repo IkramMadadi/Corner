@@ -1,6 +1,6 @@
 export async function sendTelegramNotification(message: string) {
-    const TELEGRAM_TOKEN = "8192246756:AAFCo8SNFvRX1mzxeGnnli-grwunokOyinc"
-    const CHAT_ID = "-4806896603"
+    const TELEGRAM_TOKEN = "8575822994:AAEKIwd7v7onPSvxJuKoNxJY1_a9DBRevAM"
+    const CHAT_ID = "-1003946016934"
   
     if (!TELEGRAM_TOKEN || !CHAT_ID) {
       console.error('❌ Missing Telegram config: TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID');
