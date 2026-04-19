@@ -151,7 +151,7 @@ export function StickyScrollToFormButton() {
 
 export function WhatsAppFloatingButton() {
 	const [show, setShow] = useState(true);
-	const phone = '213781820706'
+	const phone = '213656017164'
 	const message = 'السلام عليكم، أود طلب هذا المنتج ✨'
 
 	useEffect(() => {
